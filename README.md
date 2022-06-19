@@ -1,2 +1,2 @@
 # kotlin-mvvm-tutorial
-Kotlin MVVM Tutorial
+Kotlin MVVM Repository Factory Tutorial
