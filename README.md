@@ -1,7 +1,5 @@
 # kotlin-mvvm-one-tutorial
-Kotlin MVVM Tutorial
-
-Tutorial update
+Kotlin MVVM Tutorialx
 
 ### GIT Command
 ```git_command
