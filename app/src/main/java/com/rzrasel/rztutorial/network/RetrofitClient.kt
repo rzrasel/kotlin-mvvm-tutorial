@@ -8,11 +8,17 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitClient {
     companion object {
-        private const val BASE_URL = "http://rzrasel.com/rzrasel/rztutorial/"
+        private const val BASE_URL = "https://rzrasel.000webhostapp.com/plugins/"
+        private const val BASE_UORL = "http://rzrasel.com/rzrasel/rztutorial/"
+        private const val BASIE_URL = "http://rzrasel.com/rzrasel/rztutorial/"
     }
-    fun <Api> buildApi(api: Class<Api>, authToken: String? = null): Api {
+    fun <Api> buildApi(api: Class<Api>, netConnectionInterceptor: NetConnectionInterceptor, authToken: String? = null): Api {
+        val okHttpClient = OkHttpClient.Builder()
+            .addInterceptor(netConnectionInterceptor)
+            .build()
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
+            .client(okHttpClient)
             .client(
                 OkHttpClient.Builder()
                     .addInterceptor { chain ->
