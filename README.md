@@ -1,5 +1,5 @@
 # kotlin-mvvm-repository-factory-login-one-tutorial
-Kotlin MVVM Repository Factory Login One Tutorial-
+Kotlin MVVM Repository Factory Login One Tutorial
 
 ### GIT Command
 ```git_command
