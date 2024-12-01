@@ -1,6 +1,6 @@
 package com.rzrasel.rztutorial.network
 
-import com.rzrasel.rztutorial.BuildConfig
+//import com.rzrasel.rztutorial.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
